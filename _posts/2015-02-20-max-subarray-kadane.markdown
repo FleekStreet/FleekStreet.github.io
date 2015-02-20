@@ -3,9 +3,8 @@ layout:     post
 title:      "Max Contiguous Subarrays, Kadane's Algorithm, and a Learning Strategy"
 subtitle:   "because they lacked opposable thumbs and the brainpower to build a space program."
 date:       2015-02-20 12:00:00
-author:     "Start Bootstrap"
+author:     "Neil Gordon"
 header-img: "img/post-bg-01.jpg"
-tags: [Algorithms, HackerRank]
 ---
 
 <p> Recently, I've been going through problems on HackerRank because, you know, who doesn't like algorithmic brain-teasers every now and then, 
