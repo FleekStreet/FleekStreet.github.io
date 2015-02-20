@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Max Contiguous Subarrays, Kadane's Algorithm, and a Learning Strategy"
-subtitle:   "because they lacked opposable thumbs and the brainpower to build a space program."
+title:      "Max Contiguous Subarrays and Kadane's Algorithm"
+subtitle:   "And Illuminating algorithms with print()"
 date:       2015-02-20 12:00:00
 author:     "Neil Gordon"
 header-img: "img/post-bg-01.jpg"
@@ -44,7 +44,7 @@ Hit me up, I guess I'm taking requests! </p>
 
 <p> note: comments sections and code snippets coming soon, and probably a little more polish for the algorithm as well. </p>
 
-<style>
+<style type="text/css">
 p {
     text-indent: 50px;
 }
