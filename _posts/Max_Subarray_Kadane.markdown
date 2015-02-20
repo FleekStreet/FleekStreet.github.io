@@ -5,7 +5,7 @@ subtitle:   "because they lacked opposable thumbs and the brainpower to build a 
 date:       2015-02-20 12:00:00
 author:     "Start Bootstrap"
 header-img: "img/post-bg-01.jpg"
-tags: 
+tags: [Algorithms, HackerRank]
 ---
 
 <p> Recently, I've been going through problems on HackerRank because, you know, who doesn't like algorithmic brain-teasers every now and then, 
