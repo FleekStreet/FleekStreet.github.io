@@ -1,28 +1,29 @@
 ---
 layout:     post
-title:      "Max sum subarray, Kadane's Algorithm, and a Learning Strategy"
+title:      "Max Contiguous Subarrays, Kadane's Algorithm, and a Learning Strategy"
 subtitle:   "because they lacked opposable thumbs and the brainpower to build a space program."
 date:       2015-02-20 12:00:00
 author:     "Start Bootstrap"
 header-img: "img/post-bg-01.jpg"
-tags: '[test tag]'
+tags: 
 ---
 
 <p> Recently, I've been going through problems on HackerRank because, you know, who doesn't like algorithmic brain-teasers every now and then, 
-and I came across an algorithm that I just could not nail down for quite some time.  And it bugged me.  The problem I am referring to is the< a href='https://www.hackerrank.com/challenges/maxsubarray'>Maximum Subarray Problem</a></p>. But it wasn't that I couldn't figure out the problem, it was that the HackerRank provided a video which in turn provided a blueprint for the algorithm to solve the tricky part of the problem, and I kept looking at this simple set of instructions, and couldn't it was becoming clearer slower than I would have liked. Maybe I needed another perspective or to see a person go through the iterations of Kadane's algorithm to understand the logic, so I decided to hit up YouTube. 
+and I came across an algorithm that I just could not nail down for quite some time.  And it bugged me.  The problem I am referring to is the <a href='https://www.hackerrank.com/challenges/maxsubarray'> Maximum Subarray Problem</a></p>. But it wasn't that I couldn't figure out the problem, it was that the HackerRank provided a <a href="#hackerrank-kadane-video">video</a> which in turn provided 
+<a href='http://en.wikipedia.org/wiki/Maximum_subarray_problem'>Kadane's Algorithm</a> 
+to solve the tricky part of the problem, and I kept looking at this simple set of instructions, but it was becoming clearer slower than I would have liked. Maybe I needed another perspective or to see someone go through the iterations the algorithm to understand the logic more clearly.  So I decided to hit up YouTube. 
 
 <h2 class="section-heading">YouTubing It</h2>
 
 <p>Did I find videos on YouTube? Yes, many. Did they help? Not really, probably for multiple reasons.  It is hard to explain something complex as if you are a beginner.  
-That is, I was sure that once I understood the algorithm, the videos would be crystal clear, but they weren't doing much to help get over the divide from foggy to clear.  
+That is, I was sure that once I understood the algorithm, the videos would be crystal clear, but they weren't doing much to help get over the divide between having a foggy understanding and a clear understanding.  
 So I decided to bite the bullet and just revisit the original algorithm, meticulously stepping through it detail by detail.</p>
 
 
 <h2 class="section-heading">Print('It's Alive!')</h2>
 
 <p>A long time ago, I found it extremely helpful to program my own algorithms on my TI to use for math exams. Programming the algorithms actually made using the TI redundant (well, not exactly redundant, 
-still really convenient), because in breaking down an algorithm enough to program it, I had to learn it pretty well.  Computers are "dumb," so you have to be clear in your understanding and
-explicit in your instructions.  But I already had the algorithm in front of me and did not want to reinvent the wheel.  I was also reluctant to dryly trek through the steps by hand.
+they were still really convenient), because in breaking down an algorithm enough to program it, I had to learn it pretty well.  Computers are "dumb," so you have to be explicit in your instructions and therefore clear in your understanding.  But I already had the algorithm in front of me and did not want to reinvent the wheel. I was also reluctant to dryly trek through the steps by hand.
 So I decided to build a mouth-piece for my algorithm so it could tell me what it was doing and why.  Enter the print() statement. </p>
 
 <h2 class="section-heading">Ahhh, much clearer now</h2>
@@ -37,8 +38,17 @@ but once the print statements were polished and in place, the algorithm became s
 But I can tuck my new algorithmic teacher algorithm in a repository somewhere and bust it out for almost instant Kadane understanding should I ever need it.  Also, I hope that anyone else wanting to understand the algorithm quickly and easily could use this algorithm teacher algorithm.  Actually this worked so well for me, I think I'm going to make a library of these.  
 Hit me up, I guess I'm taking requests! </p>
 
+<a href='https://github.com/Neil-G/Algorithms-and-Problems/blob/master/HackerRank/Max_Subarray'>Here is a link to my script that explains Kadane's Algorithm step by step</a>:
+
+<h3 id="hackerrank-kadane-video">Maximum Contiguous Subarray Problem O(n) (Python)</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EK71U-vTOt4" frameborder="0" allowfullscreen></iframe>
+
+<p> note: comments sections and code snippets coming soon, and probably a little more polish for the algorithm as well. </p>
+
 <style>
 p {
     text-indent: 50px;
 }
 </style>
+
+

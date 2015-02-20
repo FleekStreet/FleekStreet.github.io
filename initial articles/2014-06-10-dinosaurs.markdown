@@ -43,6 +43,7 @@ Hit me up, I guess I'm taking requests! </p>
 <h3 id="hackerrank-kadane-video">Maximum Contiguous Subarray Problem O(n) (Python)</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EK71U-vTOt4" frameborder="0" allowfullscreen></iframe>
 
+<p> note: comments sections and code snippets coming soon, and probably a little more polish for the algorithm as well. </p>
 
 <style>
 p {
