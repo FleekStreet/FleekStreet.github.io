@@ -1,44 +1,44 @@
 ---
 layout:     post
-title:      "Dinosaurs are extinct today"
+title:      "Max sum subarray, Kadane's Algorithm, and a Learning Strategy"
 subtitle:   "because they lacked opposable thumbs and the brainpower to build a space program."
-date:       2014-06-10 12:00:00
+date:       2015-02-20 12:00:00
 author:     "Start Bootstrap"
 header-img: "img/post-bg-01.jpg"
 tags: '[test tag]'
 ---
 
-<p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+<p> Recently, I've been going through problems on HackerRank because, you know, who doesn't like algorithmic brain-teasers every now and then, 
+and I came across an algorithm that I just could not nail down for quite some time.  And it bugged me.  The problem I am referring to is the< a href='https://www.hackerrank.com/challenges/maxsubarray'>Maximum Subarray Problem</a></p>. But it wasn't that I couldn't figure out the problem, it was that the HackerRank provided a video which in turn provided a blueprint for the algorithm to solve the tricky part of the problem, and I kept looking at this simple set of instructions, and couldn't it was becoming clearer slower than I would have liked. Maybe I needed another perspective or to see a person go through the iterations of Kadane's algorithm to understand the logic, so I decided to hit up YouTube. 
 
-<p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+<h2 class="section-heading">YouTubing It</h2>
 
-<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+<p>Did I find videos on YouTube? Yes, many. Did they help? Not really, probably for multiple reasons.  It is hard to explain something complex as if you are a beginner.  
+That is, I was sure that once I understood the algorithm, the videos would be crystal clear, but they weren't doing much to help get over the divide from foggy to clear.  
+So I decided to bite the bullet and just revisit the original algorithm, meticulously stepping through it detail by detail.</p>
 
-<p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
 
-<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+<h2 class="section-heading">Print('It's Alive!')</h2>
 
-<h2 class="section-heading">The Final Frontier</h2>
+<p>A long time ago, I found it extremely helpful to program my own algorithms on my TI to use for math exams. Programming the algorithms actually made using the TI redundant (well, not exactly redundant, 
+still really convenient), because in breaking down an algorithm enough to program it, I had to learn it pretty well.  Computers are "dumb," so you have to be clear in your understanding and
+explicit in your instructions.  But I already had the algorithm in front of me and did not want to reinvent the wheel.  I was also reluctant to dryly trek through the steps by hand.
+So I decided to build a mouth-piece for my algorithm so it could tell me what it was doing and why.  Enter the print() statement. </p>
 
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+<h2 class="section-heading">Ahhh, much clearer now</h2>
 
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+<p>Through strategic print statements, I turned my (well, not mine) algorithm into the most efficient instructor.  
+It would spit out what it was doing and why in a nice human-friendly format.  Again, the process of updating the algorithm was quite illuminating, 
+but once the print statements were polished and in place, the algorithm became so so clear.   </p>
 
-<blockquote>The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
+<h2 class="section-heading">Some Other Benefits</h2>
 
-<p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
+<p>I may not see or need to use Kadane's algorithm for a while after this.  Because of this, I will forget it.  And if I ever need it, I would have to relearn it again, probably almost from scratch.
+But I can tuck my new algorithmic teacher algorithm in a repository somewhere and bust it out for almost instant Kadane understanding should I ever need it.  Also, I hope that anyone else wanting to understand the algorithm quickly and easily could use this algorithm teacher algorithm.  Actually this worked so well for me, I think I'm going to make a library of these.  
+Hit me up, I guess I'm taking requests! </p>
 
-<h2 class="section-heading">Reaching for the Stars</h2>
-
-<p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-
-<a href="#">
-    <img src="{{ site.baseurl }}/img/post-sample-image.jpg" alt="Post Sample Image">
-</a>
-<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-<p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-
-<p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-
-<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+<style>
+p {
+    text-indent: 50px;
+}
+</style>
