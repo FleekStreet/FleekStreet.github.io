@@ -4,6 +4,7 @@ title:      "Max Contiguous Subarrays and Kadane's Algorithm"
 subtitle:   "And Illuminating algorithms with print()"
 date:       2015-02-20 12:00:00
 author:     "Neil Gordon"
+comments:   true
 header-img: "img/post-bg-01.jpg"
 ---
 
@@ -43,6 +44,24 @@ Hit me up, I guess I'm taking requests! </p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EK71U-vTOt4" frameborder="0" allowfullscreen></iframe>
 
 <p> note: comments sections and code snippets coming soon, and probably a little more polish for the algorithm as well. </p>
+
+
+{% if page.comments %}
+ <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'fleekstreet'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
+
 
 <style type="text/css">
 p {
