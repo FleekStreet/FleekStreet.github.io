@@ -65,7 +65,7 @@ Hit me up, I guess I'm taking requests! </p>
 
 <style type="text/css">
 p {
-    text-indent: 50px;
+    text-indent: 25px;
 }
 </style>
 
