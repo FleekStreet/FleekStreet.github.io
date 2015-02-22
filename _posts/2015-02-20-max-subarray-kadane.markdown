@@ -33,189 +33,119 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 <h2 class="section-heading">Example Time</h2>
 <b>neil@neil-H61MLC:~$</b> python3 max_subarray.py 
 
-Let's find the subarray of [-6, 7, -2, 2, 4, -4, -13, 14, 8, -15] with the maximum sum using Kadane's Algorithm
-
-Note that the first array value is at the zeroth index, not the first
-
-we'll think of our starting subarray as empty with sum 0
-
-
-
---> checking array at index 0: -6
-
-step 1. (new value) = (current sum: 0) + (array[0]: -6) = -6
-
-step 2. now we check if this (new value) is > 0:
-
-it isn't, so the (current sum) remains at 0, and we move onto the next array value
-
-our subarray so far is [] with sum 0:
-\---------------
-
-
-
---> checking array at index 1: 7
-
-step 1. (new value) = (current sum: 0) + (array[1]: 7) = 7
-
-step 2. now we check if this (new value) is > 0:
-
-it is, so now we check if (current sum) = 0
-
-it is, so we set subarray starting index to 1
-
-since 7 is greater than 0, the new (current sum) is set to 7
-
-step 3. since (current sum) > (best sum), best sum becomes 7, best start index 1, and best end index 1
-
-our subarray so far is [7] with sum 7:
-\---------------
-
-
-
---> checking array at index 2: -2
-
-step 1. (new value) = (current sum: 7) + (array[2]: -2) = 5
-
-step 2. now we check if this (new value) is > 0:
-
-it is, so now we check if (current sum) = 0
-
-it isn't, so the starting index remains at 1
-
-since 5 is greater than 0, the new (current sum) is set to 5
-
-but the (current sum), 5 < (best sum), 7, so we move on to the next array value
-
-our subarray so far is [7] with sum 7:
-\---------------
-
-
-
---> checking array at index 3: 2
-
-step 1. (new value) = (current sum: 5) + (array[3]: 2) = 7
-
-step 2. now we check if this (new value) is > 0:
-
-it is, so now we check if (current sum) = 0
-
-it isn't, so the starting index remains at 1
-
-since 7 is greater than 0, the new (current sum) is set to 7
-
-but the (current sum), 7 < (best sum), 7, so we move on to the next array value
-
-our subarray so far is [7] with sum 7:
-\---------------
-
-
-
---> checking array at index 4: 4
-
-step 1. (new value) = (current sum: 7) + (array[4]: 4) = 11
-
-step 2. now we check if this (new value) is > 0:
-
-it is, so now we check if (current sum) = 0
-
-it isn't, so the starting index remains at 1
-
-since 11 is greater than 0, the new (current sum) is set to 11
-
-step 3. since (current sum) > (best sum), best sum becomes 11, best start index 1, and best end index 4
-
-our subarray so far is [7, -2, 2, 4] with sum 11:
-\---------------
-
-
-
---> checking array at index 5: -4
-
-step 1. (new value) = (current sum: 11) + (array[5]: -4) = 7
-
-step 2. now we check if this (new value) is > 0:
-
-it is, so now we check if (current sum) = 0
-
-it isn't, so the starting index remains at 1
-
-since 7 is greater than 0, the new (current sum) is set to 7
-
-but the (current sum), 7 < (best sum), 11, so we move on to the next array value
-
-our subarray so far is [7, -2, 2, 4] with sum 11:
-\---------------
-
-
-
---> checking array at index 6: -13
-
-step 1. (new value) = (current sum: 7) + (array[6]: -13) = -6
-
-step 2. now we check if this (new value) is > 0:
-
-it isn't, so the (current sum) remains at 7, and we move onto the next array value
-
-our subarray so far is [7, -2, 2, 4] with sum 11:
-\---------------
-
-
-
---> checking array at index 7: 14
-
-step 1. (new value) = (current sum: 0) + (array[7]: 14) = 14
-
-step 2. now we check if this (new value) is > 0:
-
-it is, so now we check if (current sum) = 0
-
-it is, so we set subarray starting index to 7
-
-since 14 is greater than 0, the new (current sum) is set to 14
-
-step 3. since (current sum) > (best sum), best sum becomes 14, best start index 7, and best end index 7
-
-our subarray so far is [14] with sum 14:
-\---------------
-
-
-
---> checking array at index 8: 8
-
-step 1. (new value) = (current sum: 14) + (array[8]: 8) = 22
-
-step 2. now we check if this (new value) is > 0:
-
-it is, so now we check if (current sum) = 0
-
-it isn't, so the starting index remains at 7
-
-since 22 is greater than 0, the new (current sum) is set to 22
-
-step 3. since (current sum) > (best sum), best sum becomes 22, best start index 7, and best end index 8
-
-our subarray so far is [14, 8] with sum 22:
-\---------------
-
-
-
---> checking array at index 9: -15
-
-step 1. (new value) = (current sum: 22) + (array[9]: -15) = 7
-
-step 2. now we check if this (new value) is > 0:
-
-it is, so now we check if (current sum) = 0
-
-it isn't, so the starting index remains at 7
-
-since 7 is greater than 0, the new (current sum) is set to 7
-
-but the (current sum), 7 < (best sum), 22, so we move on to the next array value
-
-our subarray so far is [14, 8] with sum 22:
-\---------------
+<p>Let's find the subarray of [-6, 7, -2, 2, 4, -4, -13, 14, 8, -15] with the maximum sum using Kadane's Algorithm</p>
+<p>Note that the first array value is at the zeroth index, not the first</p>
+<p>we'll think of our starting subarray as empty with sum 0</p>
+
+<p>--> checking array at index 0: -6</p>
+<p>step 1. (new value) = (current sum: 0) + (array[0]: -6) = -6</p>
+<p>step 2. now we check if this (new value) is > 0:</p>
+<p>it isn't, so the (current sum) remains at 0, and we move onto the next array value</p>
+<p>our subarray so far is [] with sum 0:</p>
+<p>---------------</p>
+
+
+
+<p>--> checking array at index 1: 7</p>
+<p>step 1. (new value) = (current sum: 0) + (array[1]: 7) = 7</p>
+<p>step 2. now we check if this (new value) is > 0:</p>
+<p>it is, so now we check if (current sum) = 0</p>
+<p>it is, so we set subarray starting index to 1</p>
+<p>since 7 is greater than 0, the new (current sum) is set to 7</p>
+<p>step 3. since (current sum) > (best sum), best sum becomes 7, best start index 1, and best end index 1</p>
+<p>our subarray so far is [7] with sum 7:</p>
+<p>\---------------</p>
+
+
+<p>--> checking array at index 2: -2</p>
+<p>step 1. (new value) = (current sum: 7) + (array[2]: -2) = 5</p>
+<p>step 2. now we check if this (new value) is > 0:</p>
+<p>it is, so now we check if (current sum) = 0</p>
+<p>it isn't, so the starting index remains at 1</p>
+<p>since 5 is greater than 0, the new (current sum) is set to 5</p>
+<p>but the (current sum), 5 < (best sum), 7, so we move on to the next array value</p>
+<p>our subarray so far is [7] with sum 7:</p>
+<p>\---------------</p>
+
+
+
+<p>--> checking array at index 3: 2</p>
+<p>step 1. (new value) = (current sum: 5) + (array[3]: 2) = 7</p>
+<p>step 2. now we check if this (new value) is > 0:</p>
+<p>it is, so now we check if (current sum) = 0</p>
+<p>it isn't, so the starting index remains at 1</p>
+<p>since 7 is greater than 0, the new (current sum) is set to 7</p>
+<p>but the (current sum), 7 < (best sum), 7, so we move on to the next array value</p>
+<p>our subarray so far is [7] with sum 7:</p>
+<p>\---------------</p>
+
+
+
+<p>--> checking array at index 4: 4</p>
+<p>step 1. (new value) = (current sum: 7) + (array[4]: 4) = 11</p>
+<p>step 2. now we check if this (new value) is > 0:</p>
+<p>it is, so now we check if (current sum) = 0</p>
+<p>it isn't, so the starting index remains at 1</p>
+<p>since 11 is greater than 0, the new (current sum) is set to 11</p>
+<p>step 3. since (current sum) > (best sum), best sum becomes 11, best start index 1, and best end index 4</p>
+<p>our subarray so far is [7, -2, 2, 4] with sum 11:</p>
+<p>\---------------</p>
+
+
+
+<p>--> checking array at index 5: -4</p>
+<p>step 1. (new value) = (current sum: 11) + (array[5]: -4) = 7</p>
+<p>step 2. now we check if this (new value) is > 0:</p>
+<p>it is, so now we check if (current sum) = 0</p>
+<p>it isn't, so the starting index remains at 1</p>
+<p>since 7 is greater than 0, the new (current sum) is set to 7</p>
+<p>but the (current sum), 7 < (best sum), 11, so we move on to the next array value</p>
+<p>our subarray so far is [7, -2, 2, 4] with sum 11:</p>
+<p>\---------------</p>
+
+
+<p>--> checking array at index 6: -13</p>
+<p>step 1. (new value) = (current sum: 7) + (array[6]: -13) = -6</p>
+<p>step 2. now we check if this (new value) is > 0:</p>
+<p>it isn't, so the (current sum) remains at 7, and we move onto the next array value</p>
+<p>our subarray so far is [7, -2, 2, 4] with sum 11:</p>
+<p>\---------------</p>
+
+
+
+<p>--> checking array at index 7: 14</p>
+<p>step 1. (new value) = (current sum: 0) + (array[7]: 14) = 14</p>
+<p>step 2. now we check if this (new value) is > 0:</p>
+<p>it is, so now we check if (current sum) = 0</p>
+<p>it is, so we set subarray starting index to 7</p>
+<p>since 14 is greater than 0, the new (current sum) is set to 14</p>
+<p>step 3. since (current sum) > (best sum), best sum becomes 14, best start index 7, and best end index 7</p>
+<p>our subarray so far is [14] with sum 14:</p>
+<p>\---------------</p>
+
+
+
+<p>--> checking array at index 8: 8</p>
+<p>step 1. (new value) = (current sum: 14) + (array[8]: 8) = 22</p>
+<p><p>step 2. now we check if this (new value) is > 0:</p>
+<p>it is, so now we check if (current sum) = 0</p>
+<p>it isn't, so the starting index remains at 7</p>
+<p>since 22 is greater than 0, the new (current sum) is set to 22</p>
+<p>step 3. since (current sum) > (best sum), best sum becomes 22, best start index 7, and best end index 8</p>
+<p>our subarray so far is [14, 8] with sum 22:</p>
+<p>\---------------</p>
+
+
+
+<p>--> checking array at index 9: -15</p>
+<p>step 1. (new value) = (current sum: 22) + (array[9]: -15) = 7</p>
+<p>step 2. now we check if this (new value) is > 0:</p>
+<p>it is, so now we check if (current sum) = 0</p>
+<p>it isn't, so the starting index remains at 7</p>
+<p>since 7 is greater than 0, the new (current sum) is set to 7</p>
+<p>but the (current sum), 7 < (best sum), 22, so we move on to the next array value</p>
+<p>our subarray so far is [14, 8] with sum 22:</p>
+<p>\---------------</p>
 
 
 
