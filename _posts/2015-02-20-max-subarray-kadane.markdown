@@ -33,8 +33,6 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EK71U-vTOt4" frameborder="0" allowfullscreen></iframe>
 
 
-{% include comments.html %}
-
 
 <style type="text/css">
 p {text-indent: 40px;}
