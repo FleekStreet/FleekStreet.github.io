@@ -147,7 +147,7 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 <p>but the (current sum), 7 < (best sum), 22, so we move on to the next array value</p>
 <p>our subarray so far is [14, 8] with sum 22:</p>
 <p>---------------</p>
-<p>Finally our max sum contiguous subarray from [-6, 7, -2, 2, 4, -4, -13, 14, 8, -15] is [14, 8] with sum 22</p>
+<p>Finally our max sum contiguous subarray from array [-6, 7, -2, 2, 4, -4, -13, 14, 8, -15] is [14, 8] with sum 22</p>
 
 
 
@@ -159,13 +159,13 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 <br/>
 <br/>
 <style type="text/css">
-.writing {
-  text-indent: 40px;
-  margin: 1em;
-}
 a {text-decoration: underline;}
 p {
   margin: 0em;
+}
+p.writing {
+  text-indent: 40px;
+  margin: 1em;
 }
 </style>
 
