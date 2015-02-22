@@ -27,18 +27,198 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 
 <p class="writing">I may not see or need to use Kadane's algorithm for a while after this and because of this, I will eventually forget it.  And if I ever need it, I would have to relearn probably almost from scratch.  But now I can tuck my new algorithmic teacher algorithm in a repository somewhere and bust it out for an almost instant understanding of Kadane's Algorithm should I ever want or need it.  Also, I hope that anyone else wanting to understand the algorithm quickly and easily could use this algorithm teacher algorithm.  Actually this worked so well for me I think I'm going to polish this up, make it a commandline executable, and maybe even make a little library of these.  So hit me up if you have any requests! </p>
 
-<div><a href='https://github.com/Neil-G/Algorithms-and-Problems/blob/master/HackerRank/Max_Subarray.py'>Here is a link to my script that explains Kadane's Algorithm step by step</a> for you to try it yourself.  You can run it in your IDE of choice by just pressing play, or you can download it and run it from the command line with the command </div>
-<div><b>(your-shell-stuff-here):~$ python max_subarray.py</b></div>
+<div><a href='https://github.com/Neil-G/Algorithms-and-Problems/blob/master/HackerRank/Max_Subarray.py'>Here is a link to my script that explains Kadane's Algorithm step by step</a> for you to try it yourself.  You can run it in your IDE of choice by just pressing play, or you can download it and run it from the command line, and just follow the printed output
 
 
 <h2 class="section-heading">Example Time</h2>
-neil@neil-H61MLC:~$ python3 max_subarray.py 
+<b>neil@neil-H61MLC:~$</b> python3 max_subarray.py 
 
-Let's find the subarray of [-16, -7, 1, -18, -8, 7, 3, 14, 14, 18] with the maximum sum using Kadane's Algorithm
+Let's find the subarray of [-6, 7, -2, 2, 4, -4, -13, 14, 8, -15] with the maximum sum using Kadane's Algorithm
 
 Note that the first array value is at the zeroth index, not the first
 
 we'll think of our starting subarray as empty with sum 0
+
+
+
+--> checking array at index 0: -6
+
+step 1. (new value) = (current sum: 0) + (array[0]: -6) = -6
+
+step 2. now we check if this (new value) is > 0:
+
+it isn't, so the (current sum) remains at 0, and we move onto the next array value
+
+our subarray so far is [] with sum 0:
+\---------------
+
+
+
+--> checking array at index 1: 7
+
+step 1. (new value) = (current sum: 0) + (array[1]: 7) = 7
+
+step 2. now we check if this (new value) is > 0:
+
+it is, so now we check if (current sum) = 0
+
+it is, so we set subarray starting index to 1
+
+since 7 is greater than 0, the new (current sum) is set to 7
+
+step 3. since (current sum) > (best sum), best sum becomes 7, best start index 1, and best end index 1
+
+our subarray so far is [7] with sum 7:
+\---------------
+
+
+
+--> checking array at index 2: -2
+
+step 1. (new value) = (current sum: 7) + (array[2]: -2) = 5
+
+step 2. now we check if this (new value) is > 0:
+
+it is, so now we check if (current sum) = 0
+
+it isn't, so the starting index remains at 1
+
+since 5 is greater than 0, the new (current sum) is set to 5
+
+but the (current sum), 5 < (best sum), 7, so we move on to the next array value
+
+our subarray so far is [7] with sum 7:
+\---------------
+
+
+
+--> checking array at index 3: 2
+
+step 1. (new value) = (current sum: 5) + (array[3]: 2) = 7
+
+step 2. now we check if this (new value) is > 0:
+
+it is, so now we check if (current sum) = 0
+
+it isn't, so the starting index remains at 1
+
+since 7 is greater than 0, the new (current sum) is set to 7
+
+but the (current sum), 7 < (best sum), 7, so we move on to the next array value
+
+our subarray so far is [7] with sum 7:
+\---------------
+
+
+
+--> checking array at index 4: 4
+
+step 1. (new value) = (current sum: 7) + (array[4]: 4) = 11
+
+step 2. now we check if this (new value) is > 0:
+
+it is, so now we check if (current sum) = 0
+
+it isn't, so the starting index remains at 1
+
+since 11 is greater than 0, the new (current sum) is set to 11
+
+step 3. since (current sum) > (best sum), best sum becomes 11, best start index 1, and best end index 4
+
+our subarray so far is [7, -2, 2, 4] with sum 11:
+\---------------
+
+
+
+--> checking array at index 5: -4
+
+step 1. (new value) = (current sum: 11) + (array[5]: -4) = 7
+
+step 2. now we check if this (new value) is > 0:
+
+it is, so now we check if (current sum) = 0
+
+it isn't, so the starting index remains at 1
+
+since 7 is greater than 0, the new (current sum) is set to 7
+
+but the (current sum), 7 < (best sum), 11, so we move on to the next array value
+
+our subarray so far is [7, -2, 2, 4] with sum 11:
+\---------------
+
+
+
+--> checking array at index 6: -13
+
+step 1. (new value) = (current sum: 7) + (array[6]: -13) = -6
+
+step 2. now we check if this (new value) is > 0:
+
+it isn't, so the (current sum) remains at 7, and we move onto the next array value
+
+our subarray so far is [7, -2, 2, 4] with sum 11:
+\---------------
+
+
+
+--> checking array at index 7: 14
+
+step 1. (new value) = (current sum: 0) + (array[7]: 14) = 14
+
+step 2. now we check if this (new value) is > 0:
+
+it is, so now we check if (current sum) = 0
+
+it is, so we set subarray starting index to 7
+
+since 14 is greater than 0, the new (current sum) is set to 14
+
+step 3. since (current sum) > (best sum), best sum becomes 14, best start index 7, and best end index 7
+
+our subarray so far is [14] with sum 14:
+\---------------
+
+
+
+--> checking array at index 8: 8
+
+step 1. (new value) = (current sum: 14) + (array[8]: 8) = 22
+
+step 2. now we check if this (new value) is > 0:
+
+it is, so now we check if (current sum) = 0
+
+it isn't, so the starting index remains at 7
+
+since 22 is greater than 0, the new (current sum) is set to 22
+
+step 3. since (current sum) > (best sum), best sum becomes 22, best start index 7, and best end index 8
+
+our subarray so far is [14, 8] with sum 22:
+\---------------
+
+
+
+--> checking array at index 9: -15
+
+step 1. (new value) = (current sum: 22) + (array[9]: -15) = 7
+
+step 2. now we check if this (new value) is > 0:
+
+it is, so now we check if (current sum) = 0
+
+it isn't, so the starting index remains at 7
+
+since 7 is greater than 0, the new (current sum) is set to 7
+
+but the (current sum), 7 < (best sum), 22, so we move on to the next array value
+
+our subarray so far is [14, 8] with sum 22:
+\---------------
+
+
+
 
 
 <h3 class="section-heading" id="hackerrank-kadane-video">Maximum Contiguous Subarray Problem O(n) (Python)</h3>
