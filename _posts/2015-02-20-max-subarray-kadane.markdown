@@ -33,8 +33,11 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 
 <h2 class="section-heading">Example Time</h2>
 neil@neil-H61MLC:~$ python3 max_subarray.py 
+
 Let's find the subarray of [-16, -7, 1, -18, -8, 7, 3, 14, 14, 18] with the maximum sum using Kadane's Algorithm
+
 Note that the first array value is at the zeroth index, not the first
+
 we'll think of our starting subarray as empty with sum 0
 
 
