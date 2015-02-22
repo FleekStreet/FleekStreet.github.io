@@ -47,7 +47,6 @@ Hit me up, I guess I'm taking requests! </p>
 
 
 
-{% include comments.html %}
 
 
 
