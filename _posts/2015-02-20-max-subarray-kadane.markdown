@@ -27,8 +27,8 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 
 <p>I may not see or need to use Kadane's algorithm for a while after this and because of this, I will eventually forget it.  And if I ever need it, I would have to relearn probably almost from scratch.  But now I can tuck my new algorithmic teacher algorithm in a repository somewhere and bust it out for an almost instant understanding of Kadane's Algorithm should I ever want or need it.  Also, I hope that anyone else wanting to understand the algorithm quickly and easily could use this algorithm teacher algorithm.  Actually this worked so well for me I think I'm going to polish this up, make it a commandline executable, and maybe even make a library of these.  So hit me up if you have any requests! </p>
 
-<div><a href='https://github.com/Neil-G/Algorithms-and-Problems/blob/master/HackerRank/Max_Subarray'>Here is a link to my script that explains Kadane's Algorithm step by step</a>: I'll be adding examples of the script and its output shortly- stay tuned.</div>
-<br><br><br>
+<div><a href='https://github.com/Neil-G/Algorithms-and-Problems/blob/master/HackerRank/Max_Subarray'>Here is a link to my script that explains Kadane's Algorithm step by step</a>, and I'll be adding examples of the script and its output shortly, so stay tuned.</div>
+<br/><br/><br/>
 <h3 id="hackerrank-kadane-video">Maximum Contiguous Subarray Problem O(n) (Python)</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EK71U-vTOt4" frameborder="0" allowfullscreen></iframe>
 
