@@ -31,8 +31,8 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 
 
 <h2 class="section-heading">Example Time</h2>
-<b>neil@neil-H61MLC:~$</b> python3 max_subarray.py 
-<div class="code_output">
+<p><b>neil@neil-H61MLC:~$</b> python3 max_subarray.py</p> 
+
 <p>Let's find the subarray of [-6, 7, -2, 2, 4, -4, -13, 14, 8, -15] with the maximum sum using Kadane's Algorithm</p>
 <p>Note that the first array value is at the zeroth index, not the first</p>
 <p>we'll think of our starting subarray as empty with sum 0</p>
@@ -159,10 +159,9 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 <style type="text/css">
 .writing {text-indent: 40px;}
 a {text-decoration: underline;}
-.code_output {
-  margin-top: 0em;
-  margin-bottom: 2em;
-  }
+p {
+  margin: 0em;
+}
 </style>
 
 
