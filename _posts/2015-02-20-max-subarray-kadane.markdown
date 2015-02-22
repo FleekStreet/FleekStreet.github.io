@@ -30,7 +30,6 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 <div><a href='https://github.com/Neil-G/Algorithms-and-Problems/blob/master/HackerRank/Max_Subarray'>Here is a link to my script that explains Kadane's Algorithm step by step</a>, and I'll be adding examples of the script and its output shortly, so stay tuned.</div>
 <br/>
 <br/>
-***
 <br/>
 <br/>
 <br/>
