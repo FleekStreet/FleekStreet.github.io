@@ -29,17 +29,16 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 
 <div><a href='https://github.com/Neil-G/Algorithms-and-Problems/blob/master/HackerRank/Max_Subarray'>Here is a link to my script that explains Kadane's Algorithm step by step</a>, and I'll be adding examples of the script and its output shortly, so stay tuned.</div>
 
-
-<h3 id="hackerrank-kadane-video">Maximum Contiguous Subarray Problem O(n) (Python)</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EK71U-vTOt4" frameborder="0" allowfullscreen></iframe>
 <br/>
 <br/>
+<h3 id="hackerrank-kadane-video"/>Maximum Contiguous Subarray Problem O(n) (Python)</h3/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EK71U-vTOt4" frameborder="0" allowfullscreen/></iframe/>
 <br/>
 <br/>
 <br/>
 <style type="text/css">
 p {text-indent: 40px;}
-a {color:blue}
+a {text-decoration: underline;}
 </style>
 
 
