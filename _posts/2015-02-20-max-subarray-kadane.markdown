@@ -36,7 +36,7 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 <p>Let's find the subarray of [-6, 7, -2, 2, 4, -4, -13, 14, 8, -15] with the maximum sum using Kadane's Algorithm</p>
 <p>Note that the first array value is at the zeroth index, not the first</p>
 <p>we'll think of our starting subarray as empty with sum 0</p>
-<p></p>
+<p>---------------</p>
 
 
 <p>--> checking array at index 0: -6</p>
