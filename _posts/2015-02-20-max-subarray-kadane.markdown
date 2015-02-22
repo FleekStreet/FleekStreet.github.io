@@ -22,7 +22,7 @@ header-img: "img/post-bg-01.jpg"
 
 <p class="writing">Through strategic print statements, I turned my (well, not mine) algorithm into the most efficient instructor.  
 It would spit out what it was doing and why in a nice human-friendly format as it did it's work.  Again, the process of updating the algorithm was really illuminating, but once the print statements were polished and in place, the algorithm became so so clear.   </p>
-<p class="writing"><a href='https://github.com/Neil-G/Algorithms-and-Problems/blob/master/HackerRank/Max_Subarray.py'>Here is a link to my script that explains Kadane's Algorithm step by step</a> for you to try it yourself.  You can run it in your IDE of choice by just pressing play, or you can download it and run it from the command line, and just follow the printed output.</p>
+<p class="writing"><a href='https://github.com/Neil-G/Algorithms-and-Problems/blob/master/HackerRank/Max_Subarray.py'>Here is a link to my script that explains Kadane's Algorithm step by step</a> for you to try it yourself.  You can run it in your IDE of choice by just pressing play, or you can download it and run it from the command line, and follow the printed output.</p>
 
 <h2 class="section-heading">To the future</h2>
 
