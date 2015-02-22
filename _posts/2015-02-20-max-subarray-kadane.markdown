@@ -33,20 +33,9 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EK71U-vTOt4" frameborder="0" allowfullscreen></iframe>
 
 
-{% if page.comments %}<div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'fleekstreet'; // required: replace example with your forum shortname
+{% include comments.html %}
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}
+
 <style type="text/css">
 p {text-indent: 40px;}
 </style>
