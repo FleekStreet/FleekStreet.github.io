@@ -25,14 +25,14 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 
 <h2 class="section-heading">To the future</h2>
 
-<p class="writing">I may not see or need to use Kadane's algorithm for a while after this and because of this, I will eventually forget it.  And if I ever need it, I would have to relearn probably almost from scratch.  But now I can tuck my new algorithmic teacher algorithm in a repository somewhere and bust it out for an almost instant understanding of Kadane's Algorithm should I ever want or need it.  Also, I hope that anyone else wanting to understand the algorithm quickly and easily could use this algorithm teacher algorithm.  Actually this worked so well for me I think I'm going to polish this up, make it a <div>commandline executable, and maybe even make a little library of these.  So hit me up if you have any requests!</div> </p>
+<p class="writing">I may not see or need to use Kadane's algorithm for a while after this and because of this, I will eventually forget it.  And if I ever need it, I would have to relearn probably almost from scratch.  But now I can tuck my new algorithmic teacher algorithm in a repository somewhere and bust it out for an almost instant understanding of Kadane's Algorithm should I ever want or need it.  Also, I hope that anyone else wanting to understand the algorithm quickly and easily could use this algorithm teacher algorithm.  Actually this worked so well for me I think I'm going to polish this up, make it a commandline executable, and maybe even make a little library of these.  So hit me up if you have any requests! </p>
 
 <div><a href='https://github.com/Neil-G/Algorithms-and-Problems/blob/master/HackerRank/Max_Subarray.py'>Here is a link to my script that explains Kadane's Algorithm step by step</a> for you to try it yourself.  You can run it in your IDE of choice by just pressing play, or you can download it and run it from the command line, and just follow the printed output
 
 
 <h2 class="section-heading">Example Time</h2>
 <b>neil@neil-H61MLC:~$</b> python3 max_subarray.py 
-
+<div class="code_output">
 <p>Let's find the subarray of [-6, 7, -2, 2, 4, -4, -13, 14, 8, -15] with the maximum sum using Kadane's Algorithm</p>
 <p>Note that the first array value is at the zeroth index, not the first</p>
 <p>we'll think of our starting subarray as empty with sum 0</p>
@@ -41,7 +41,7 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 <p>step 1. (new value) = (current sum: 0) + (array[0]: -6) = -6</p>
 <p>step 2. now we check if this (new value) is > 0:</p>
 <p>it isn't, so the (current sum) remains at 0, and we move onto the next array value</p>
-<p>our subarray so far is [] with sum 0:</p>
+<p>our subarray so far is [ ] with sum 0:</p>
 <p>---------------</p>
 
 
@@ -77,7 +77,7 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 <p>since 7 is greater than 0, the new (current sum) is set to 7</p>
 <p>but the (current sum), 7 < (best sum), 7, so we move on to the next array value</p>
 <p>our subarray so far is [7] with sum 7:</p>
-<p>\---------------</p>
+<p>---------------</p>
 
 
 
@@ -101,7 +101,7 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 <p>since 7 is greater than 0, the new (current sum) is set to 7</p>
 <p>but the (current sum), 7 < (best sum), 11, so we move on to the next array value</p>
 <p>our subarray so far is [7, -2, 2, 4] with sum 11:</p>
-<p>\---------------</p>
+<p>---------------</p>
 
 
 <p>--> checking array at index 6: -13</p>
@@ -146,7 +146,7 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 <p>but the (current sum), 7 < (best sum), 22, so we move on to the next array value</p>
 <p>our subarray so far is [14, 8] with sum 22:</p>
 <p>---------------</p>
-
+</div>
 
 
 
@@ -159,6 +159,10 @@ It would spit out what it was doing and why in a nice human-friendly format as i
 <style type="text/css">
 .writing {text-indent: 40px;}
 a {text-decoration: underline;}
+.code_output {
+  margin-top: 0em;
+  margin-bottom: 2em;
+  }
 </style>
 
 
