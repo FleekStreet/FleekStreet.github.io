@@ -27,6 +27,7 @@ header-img: "img/post-bg-04.jpg"
 
 <span class="k">def</span> <span class="nf">next_level</span><span class="p">(</span><span class="n">current_level</span><span class="p">):</span>
 </pre></div>
+
 </div>
 
 
@@ -52,6 +53,7 @@ header-img: "img/post-bg-04.jpg"
         <span class="k">except</span><span class="p">:</span>
             <span class="k">pass</span>
 </pre></div>
+
 </div>
 
 <p> Then finally putting the entire next level together, adding the 1's on either end, we get </p> 
