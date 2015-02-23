@@ -20,15 +20,13 @@ header-img: "img/post-bg-04.jpg"
 
 <h2 class="section-heading">Next Level Function</h2>
 <p class='writing'> First I made a function that produced a new level from a given level called next_level.  I also imported the <a href='http://pymotw.com/2/collections/deque.html'>deque</a> object from the built-in <a href='https://docs.python.org/3.4/library/collections.html'>collections module</a>.  On a side note, I picked up deque from <a href='http://www.amazon.com/Python-Cookbook-Third-David-Beazley/dp/1449340377/ref=sr_1_1?ie=UTF8&qid=1424669853&sr=8-1&keywords=python+cookbook'>Python Cookbook</a>, which I highly recommend.  Among other things, you can set it to contain only a certain number of elelemnts, so that when you add an element to the end, it pops out the element at its head.  This is really convenient when you want to traverse some array but only look at some fixed length subarray.  Here I'll need to traverse the "current level" looking every subaray of 3 consequtive elements (to get the sums to calculate values for the level below).</p>
+
 <div class="highlight">
-
 <div class="hlcode">
-
 <div class="syntax"><pre><span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">deque</span>
 
 <span class="k">def</span> <span class="nf">next_level</span><span class="p">(</span><span class="n">current_level</span><span class="p">):</span>
 </pre></div>
-
 </div>
 
 
@@ -36,18 +34,15 @@ header-img: "img/post-bg-04.jpg"
 <p class='writing'>Each new level has a 1 on either end automatically.  The next numbers in are the sum of the first two and last two values of the current level respectively.  I refer to them as "left end" and "right end."</p>
 
 <div class="hlcode">
-
 <div class="syntax"><pre>    <span class="n">l_end</span> <span class="o">=</span> <span class="n">current_level</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">current_level</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
     <span class="n">r_end</span> <span class="o">=</span> <span class="n">current_level</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">current_level</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
 </pre></div>
-
 </div>
 
 </div>    
 <p class='writing'> That leaves a "middle section" with 2 elements shorter than the current level.  We'll make an empty middle section container to hold these values.  We'll also make a deque to traverse our current level.  The deque will have a max length of 3, and be initially populated by the first 3 elements of the current level.  This way we can calculate the deque sum to find the value the corresponding element for the middle, then append the next current level element to the deque, calculate the deque sum for the next middle element, etc. etc. until we have all of our values. The try/except here is so that I don't have to worry about indexing, which can be annoying.  I can let the deque keep going until there are no more middle elements left uncalculated without telling it explicitely where to stop.</p> 
 
 <div class="hlcode">
-
 <div class="syntax"><pre>    <span class="n">middle</span> <span class="o">=</span> <span class="p">[</span><span class="k">None</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
     <span class="n">temp</span> <span class="o">=</span> <span class="n">deque</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">],</span> <span class="n">maxlen</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">middle</span><span class="p">)):</span>
@@ -57,7 +52,6 @@ header-img: "img/post-bg-04.jpg"
         <span class="k">except</span><span class="p">:</span>
             <span class="k">pass</span>
 </pre></div>
-
 </div>
 
 <p> Then finally putting the entire next level together, adding the 1's on either end, we get </p> 
@@ -71,7 +65,6 @@ header-img: "img/post-bg-04.jpg"
 <p class='writing'>Next, I needed a function to find any specific level.  I could have modified my previous function to be recursive, but I chose a simpler method for me to implement, which was to create another function that called the next_level function. This function would be called produce_level and take an integer x representing the level of the triangle to produce. These two functions together would act like a single recursive function.  The produce_level function would start at level 2 which is [1,1,1] and keeping calling next_level on subsequent levels, keeping track of what level it was at, and stopping at the level asked for</p>
 
 <div class="hlcode">
-
 <div class="syntax"><pre><span class="k">def</span> <span class="nf">produce_level</span><span class="p">(</span><span class="n">level_number</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;produces the given level of the number triangle&#39;&#39;&#39;</span>
     <span class="n">current_level_number</span> <span class="o">=</span> <span class="mi">2</span>
@@ -81,7 +74,6 @@ header-img: "img/post-bg-04.jpg"
         <span class="n">current_level_number</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">return</span> <span class="n">current_level</span>
 </pre></div>
-
 </div>
 
 <h2 class="section-heading">First Even Number Position Function</h2>
@@ -89,7 +81,6 @@ header-img: "img/post-bg-04.jpg"
 </p>
 
 <div class="hlcode">
-
 <div class="syntax"><pre><span class="k">def</span> <span class="nf">find_starting_even</span><span class="p">(</span><span class="n">level_number</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;finds the position of first even number in the given number triangle level&#39;&#39;&#39;</span>
     <span class="n">current_level</span> <span class="o">=</span> <span class="n">produce_level</span><span class="p">(</span><span class="n">level_number</span><span class="p">)</span> 
@@ -99,25 +90,21 @@ header-img: "img/post-bg-04.jpg"
         <span class="k">else</span><span class="p">:</span>
             <span class="k">pass</span>
 </pre></div>
-
 </div>            
 
 <h2 class="section-heading">Test Running</h2>
 <p class='writing'>Now I wanted to test run my functions to see if they worked.  Plus maybe the output would reveal some kind of pattern.  By the way, I wan't worried about robustness of inputs, and I knew I would only be looking for levels above 2 and that Iw ould be the only one using these functions and for only a very short period of time.  Here was the output for levels 3 through 7</p>
 
 <div class="hlcode">
-
 <div class="syntax"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">):</span>  
     <span class="n">produce_level</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> 
     <span class="n">find_starting_even</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
-
 </div>
 
 <p>Produced</p>
 
 <div class="hlcode">
-
 <div class="syntax"><pre><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 <span class="mi">2</span>
 <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
@@ -129,7 +116,6 @@ header-img: "img/post-bg-04.jpg"
 <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">126</span><span class="p">,</span> <span class="mi">141</span><span class="p">,</span> <span class="mi">126</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 <span class="mi">2</span>
 </pre></div>
-
 </div>
 
 <p> Everything checks out </p>
@@ -149,7 +135,6 @@ header-img: "img/post-bg-04.jpg"
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>    
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
-
 </div>
 
 <p>Here is the resulting graph created:</p>
@@ -160,7 +145,6 @@ header-img: "img/post-bg-04.jpg"
 </p>
 
 <div class="hlcode">
-
 <div class="syntax"><pre><span class="k">def</span> <span class="nf">first_even_position</span><span class="p">(</span><span class="n">level_number</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">level_number</span><span class="o">%</span><span class="mi">2</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">2</span>
@@ -169,7 +153,6 @@ header-img: "img/post-bg-04.jpg"
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">3</span>
 </pre></div>
-
 </div>
 
 <p>
