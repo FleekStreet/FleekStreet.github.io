@@ -20,14 +20,14 @@ header-img: "img/post-bg-04.jpg"
 
 <h2 class="section-heading">Next Level Function</h2>
 <p class='writing'> First I made a function that produced a new level from a given level called next_level.  I also imported the <a href='http://pymotw.com/2/collections/deque.html'>deque</a> object from the built-in <a href='https://docs.python.org/3.4/library/collections.html'>collections module</a>.  On a side note, I picked up deque from <a href='http://www.amazon.com/Python-Cookbook-Third-David-Beazley/dp/1449340377/ref=sr_1_1?ie=UTF8&qid=1424669853&sr=8-1&keywords=python+cookbook'>Python Cookbook</a>, which I highly recommend.  Among other things, you can set it to contain only a certain number of elelemnts, so that when you add an element to the end, it pops out the element at its head.  This is really convenient when you want to traverse some array but only look at some fixed length subarray.  Here I'll need to traverse the "current level" looking every subaray of 3 consequtive elements (to get the sums to calculate values for the level below).</p>
-
-<pre>
+<div class="highlight">
+<pre><code class="language-python" data-lang="python">
 
 from collections import deque
 
 def next_level(current_level):
-
-</pre>
+</div>
+</code></pre>
 <p class='writing'>Each new level has a 1 on either end automatically.  The next numbers in are the sum of the first two and last two values of the current level respectively.  I refer to them as "left end" and "right end."</p>
 <pre>
 
