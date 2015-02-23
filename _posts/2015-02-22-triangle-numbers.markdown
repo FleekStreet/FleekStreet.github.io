@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Triangle Numbers"
-subtitle:   "The Long Way to a Simple Solution"
+subtitle:   "And the Long Way to a Simple Solution"
 date:       2015-02-23 12:00:00
 author:     "Neil Gordon"
 comments:   true
