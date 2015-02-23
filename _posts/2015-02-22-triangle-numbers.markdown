@@ -8,13 +8,13 @@ comments:   true
 header-img: "img/post-bg-04.jpg"
 ---
 
-<p class='writing'> In this post, I'll talk about how I solved the <a href='https://www.hackerrank.com/domains/'> HackerRank </a> <a href='https://www.hackerrank.com/challenges/triangle-numbers'> Triangle Numbers </a> problem the long and why. In this problem, the triangle of numbers is created as follows: </p> 
-<pre>
+<p class="writing"> In this post, I'll talk about how I solved the <a href="https://www.hackerrank.com/domains/"> HackerRank </a> <a href="https://www.hackerrank.com/challenges/triangle-numbers"> Triangle Numbers </a> problem the long and why. In this problem, the triangle of numbers is created as follows: </p> 
+
 <p align="center"> 1 </p>
 <p align="center"> 1 1 1 </p>
 <p align="center"> 1 2 3 2 1 </p>
 <p align="center"> 1 3 6 7 6 3 1 </p>
-</pre>
+
 
 <p>Each number in any subsequent level is the sum of the number directly it and its neighbors (on the level above, not its own neighbors).  A non-existent neighbor is counted as a 0, i.e. the first two and last two numbers in any row will only be the sum of one or two numbers.  The problem asks you to give the position of the first even number a given level of the triangle.  No analytical idea popped at out at me immediately, so I decided with a brute force solution.  Maybe I would have some insight while breaking down the recursive formula for generating the levels</p>
 
