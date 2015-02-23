@@ -7,8 +7,8 @@ author:     "Neil Gordon"
 comments:   true
 header-img: "img/post-bg-04.jpg"
 ---
-
-<p class='writing'> In this post, I'll talk about how I solved the HackerRank Triangle Numbers problem the long and why. In a nutshell, the triangle of numbers is created as follows:</p> 
+<a href=''><a/>
+<p class='writing'> In this post, I'll talk about how I solved the <a href='https://www.hackerrank.com/domains/'>HackerRank<a/> <a href='https://www.hackerrank.com/challenges/triangle-numbers'>Triangle Numbers<a/> problem the long and why. In this problem, the triangle of numbers is created as follows:</p> 
 <p align="center">1</p>
 <p align="center">1 1 1</p>
 <p align="center">1 2 3 2 1</p>
@@ -16,7 +16,7 @@ header-img: "img/post-bg-04.jpg"
 <p >Each number in any subsequent level is the sum of the number directly it and its neighbors (on the level above, not its own neighbors).  A non-existent neighbor is counted as a 0, i.e. the first two and last two numbers in any row will only be the sum of one or two numbers.  The problem asks you to give the position of the first even number a given level of the triangle.  No analytical idea popped at out at me immediately, so I decided with a brute force solution.  Maybe I would have some insight while breaking down the recursive formula for generating the levels</p>
 
 <h2 class="section-heading">Next Level Function</h2>
-<p class='writing'> First I made a function that produced a new level from a given level called next_level.  I also imported the deque object from the built-in collections library.  On a side note, I picked up deque from The Python Cookbook, which I highly recommend.  Basically, you can set it to contain only a certain number of elelemnts, so that when you add an element to the end, it pops out the element at its head.  This is really convenient when you want to traverse some array but only look at some fixed length subarray.  Here I'll need to traverse the "current level" looking every subaray of 3 consequtive elements (to get the sums to calculate values for the level below).</p>
+<p class='writing'> First I made a function that produced a new level from a given level called next_level.  I also imported the <a href='http://pymotw.com/2/collections/deque.html'>deque</a> object from the built-in <a href='https://docs.python.org/3.4/library/collections.html'>collections module</a>.  On a side note, I picked up deque from <a href='http://www.amazon.com/Python-Cookbook-Third-David-Beazley/dp/1449340377/ref=sr_1_1?ie=UTF8&qid=1424669853&sr=8-1&keywords=python+cookbook'>Python Cookbook</a>, which I highly recommend.  Among other things, you can set it to contain only a certain number of elelemnts, so that when you add an element to the end, it pops out the element at its head.  This is really convenient when you want to traverse some array but only look at some fixed length subarray.  Here I'll need to traverse the "current level" looking every subaray of 3 consequtive elements (to get the sums to calculate values for the level below).</p>
 
 <pre>
 
@@ -52,7 +52,7 @@ def next_level(current_level):
     
 </pre>
 
-<h2 class="section-heading">Function to Find Specific Level</h2>
+<h2 class="section-heading">Specific Level Function</h2>
 <p class='writing'>Next, I needed a function to find any specific level.  I could have modified my previous function to be recursive, but I chose a simpler method for me to implement, which was to create another function that called the next_level function. This function would be called produce_level and take an integer x representing the level of the triangle to produce. These two functions together would act like a single recursive function.  The produce_level function would start at level 2 which is [1,1,1] and keeping calling next_level on subsequent levels, keeping track of what level it was at, and stopping at the level asked for</p>
 <pre>
 
@@ -67,7 +67,7 @@ def produce_level(level_number):
     
 </pre>
 
-<h2 class="section-heading">Finding the First Even Number</h2>
+<h2 class="section-heading">First Even Number Position Function</h2>
 <p class='writing'>Finally I would make a third function that would go through a given level and find the place of the first even number.  This could have easily been added to the previous function, but it was just simpler to think about all of these pieces modularly.  This function would basically go through the array starting at the beginning and find the first element n, where n/2 had a remainder of 0.  I would use the modulo function to do this (% in python; e.g. 17%3 = 2 since 17/3 = 5 remainder 2).  It would return the index+1 because in python the first element is element number 0, while in the problem, the first element is considered element number 1. 
 </p>
 <pre>
@@ -110,7 +110,7 @@ for i in range(3, 8):
 
 </pre>
 <p> Everything checks out </p>
-<h2 class="section-heading">Pattern Finding</h2>
+<h2 class="section-heading">Searching for a Pattern</h2>
 <p class='writing'>Everything is looking good, but I doubt HackerRank would let me solve this by brute force.  Their testing aapparatus tends to time out if you solve problems using brute force, and when I tried this, it did infact timeout.  So I had to find some sort of pattern.  Instead of printing out a bunch of outputs and sorting through it, I figured a pattern would be easiest to detect visually.  So I used a loop would generate a list of the first 50 values  output by the find_starting_even function (starting with level 3), make a list to hold the values, and then make a graph from that list.</p>
 
 <pre>
