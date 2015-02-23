@@ -52,7 +52,7 @@ header-img: "img/post-bg-01.jpg"
 <p>    it is, so set subarray starting index to current index 1</p>
 <p>  since (new value: 7) > 0, (current sum: 0) is set to (new value)</p>
 <p>step 3. Check if (current sum) > (best sum)</p>
-<p>  since (current sum: 7) > (best sum: 0), best sum becomes: 7, best start index: 1, and best end index: 1</p>
+<p>  (current sum: 7) > (best sum: 0), so best sum becomes: 7, best start index: 1, and best end index: 1</p>
 <p>result: our subarray so far is [7] with sum 7:
 <p>----------------</p>
 
@@ -62,7 +62,7 @@ header-img: "img/post-bg-01.jpg"
 <p>  it is, so check if (current sum) = 0:</p>
 <p>    it isn't, so don't change the starting index</p>
 <p>  since (new value: 5) > 0, (current sum: 7) is set to (new value)</p>
-<p>but (current sum: 5) < (best sum: 7), so we move on to the next array value</p>
+<p>  (current sum: 5) < (best sum: 7), so we move on to the next array value</p>
 <p>result: our subarray so far is [7] with sum 7:
 <p>----------------</p>
 
@@ -72,7 +72,7 @@ header-img: "img/post-bg-01.jpg"
 <p>  it is, so check if (current sum) = 0:</p>
 <p>    it isn't, so don't change the starting index</p>
 <p>  since (new value: 7) > 0, (current sum: 5) is set to (new value)</p>
-<p>but (current sum: 7) < (best sum: 7), so we move on to the next array value</p>
+<p>  (current sum: 7) < (best sum: 7), so we move on to the next array value</p>
 <p>result: our subarray so far is [7] with sum 7:
 <p>----------------</p>
 
@@ -83,7 +83,7 @@ header-img: "img/post-bg-01.jpg"
 <p>    it isn't, so don't change the starting index</p>
 <p>  since (new value: 11) > 0, (current sum: 7) is set to (new value)</p>
 <p>step 3. Check if (current sum) > (best sum)</p>
-<p>  since (current sum: 11) > (best sum: 7), best sum becomes: 11, best start index: 1, and best end index: 4</p>
+<p>  (current sum: 11) > (best sum: 7), so best sum becomes: 11, best start index: 1, and best end index: 4</p>
 <p>result: our subarray so far is [7, -2, 2, 4] with sum 11:
 <p>----------------</p>
 
@@ -93,7 +93,7 @@ header-img: "img/post-bg-01.jpg"
 <p>  it is, so check if (current sum) = 0:</p>
 <p>    it isn't, so don't change the starting index</p>
 <p>  since (new value: 7) > 0, (current sum: 11) is set to (new value)</p>
-<p>but (current sum: 7) < (best sum: 11), so we move on to the next array value</p>
+<p>  (current sum: 7) < (best sum: 11), so we move on to the next array value</p>
 <p>result: our subarray so far is [7, -2, 2, 4] with sum 11:
 <p>----------------</p>
 
@@ -111,7 +111,7 @@ header-img: "img/post-bg-01.jpg"
 <p>    it is, so set subarray starting index to current index 7</p>
 <p>  since (new value: 14) > 0, (current sum: 0) is set to (new value)</p>
 <p>step 3. Check if (current sum) > (best sum)</p>
-<p>  since (current sum: 14) > (best sum: 11), best sum becomes: 14, best start index: 7, and best end index: 7</p>
+<p>  (current sum: 14) > (best sum: 11), so best sum becomes: 14, best start index: 7, and best end index: 7</p>
 <p>result: our subarray so far is [14] with sum 14:
 <p>----------------</p>
 
@@ -122,7 +122,7 @@ header-img: "img/post-bg-01.jpg"
 <p>    it isn't, so don't change the starting index</p>
 <p>  since (new value: 22) > 0, (current sum: 14) is set to (new value)</p>
 <p>step 3. Check if (current sum) > (best sum)</p>
-<p>  since (current sum: 22) > (best sum: 14), best sum becomes: 22, best start index: 7, and best end index: 8</p>
+<p>  (current sum: 22) > (best sum: 14), so best sum becomes: 22, best start index: 7, and best end index: 8</p>
 <p>result: our subarray so far is [14, 8] with sum 22:
 <p>----------------</p>
 
@@ -132,7 +132,7 @@ header-img: "img/post-bg-01.jpg"
 <p>  it is, so check if (current sum) = 0:</p>
 <p>    it isn't, so don't change the starting index</p>
 <p>  since (new value: 7) > 0, (current sum: 22) is set to (new value)</p>
-<p>but (current sum: 7) < (best sum: 22), so we move on to the next array value</p>
+<p>  (current sum: 7) < (best sum: 22), so we move on to the next array value</p>
 <p>result: our subarray so far is [14, 8] with sum 22:
 <p>----------------</p>
 
