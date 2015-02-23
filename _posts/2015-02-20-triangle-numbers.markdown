@@ -40,7 +40,7 @@ header-img: "img/post-bg-04.jpg"
 </pre></div>
 </div>
 
-</div>    
+   
 <p class='writing'> That leaves a "middle section" with 2 elements shorter than the current level.  We'll make an empty middle section container to hold these values.  We'll also make a deque to traverse our current level.  The deque will have a max length of 3, and be initially populated by the first 3 elements of the current level.  This way we can calculate the deque sum to find the value the corresponding element for the middle, then append the next current level element to the deque, calculate the deque sum for the next middle element, etc. etc. until we have all of our values. The try/except here is so that I don't have to worry about indexing, which can be annoying.  I can let the deque keep going until there are no more middle elements left uncalculated without telling it explicitely where to stop.</p> 
 
 <div class="hlcode">
