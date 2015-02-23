@@ -5,7 +5,7 @@ subtitle:   "The Long Way to a Simple Solution"
 date:       2015-02-23 12:00:00
 author:     "Neil Gordon"
 comments:   true
-header-img: "img/post-bg-01.jpg"
+header-img: "img/post-bg-04.jpg"
 ---
 
 <p class='writing'> In this post, I'll talk about how I solved the HackerRank Triangle Numbers problem the long and why. In a nutshell, the triangle of numbers is created as follows:</p> 
@@ -132,11 +132,11 @@ plt.show()
 
 def first_even_position(level_number):
     if level_number%2:
-        print(2)
+        return 2
     elif level_number%4:
-        print(4)
+        return 4
     else:
-        print(3)
+        return 3
         
 </pre>
 <p>
