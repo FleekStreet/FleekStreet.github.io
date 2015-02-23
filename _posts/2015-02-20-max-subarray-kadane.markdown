@@ -42,7 +42,6 @@ header-img: "img/post-bg-01.jpg"
 <p>step 1. Calculate (new value) = (current sum: 0) + (array[0]: -6) = -6</p>
 <p>step 2. Check if (new value) > 0:</p>
 <p>  it isn't, so we set current sum to 0 and move onto the next array value</p>
-<p>step 3. Check if (current sum) > (best sum)</p>
 <p>result: our subarray so far is [] with sum 0:
 <p>----------------</p>
 
@@ -63,7 +62,6 @@ header-img: "img/post-bg-01.jpg"
 <p>  it is, so check if (current sum) = 0:</p>
 <p>    it isn't, so don't change the starting index</p>
 <p>  since (new value: 5) > 0, (current sum: 7) is set to (new value)</p>
-<p>step 3. Check if (current sum) > (best sum)</p>
 <p>but (current sum: 5) < (best sum: 7), so we move on to the next array value</p>
 <p>result: our subarray so far is [7] with sum 7:
 <p>----------------</p>
@@ -74,7 +72,6 @@ header-img: "img/post-bg-01.jpg"
 <p>  it is, so check if (current sum) = 0:</p>
 <p>    it isn't, so don't change the starting index</p>
 <p>  since (new value: 7) > 0, (current sum: 5) is set to (new value)</p>
-<p>step 3. Check if (current sum) > (best sum)</p>
 <p>but (current sum: 7) < (best sum: 7), so we move on to the next array value</p>
 <p>result: our subarray so far is [7] with sum 7:
 <p>----------------</p>
@@ -96,7 +93,6 @@ header-img: "img/post-bg-01.jpg"
 <p>  it is, so check if (current sum) = 0:</p>
 <p>    it isn't, so don't change the starting index</p>
 <p>  since (new value: 7) > 0, (current sum: 11) is set to (new value)</p>
-<p>step 3. Check if (current sum) > (best sum)</p>
 <p>but (current sum: 7) < (best sum: 11), so we move on to the next array value</p>
 <p>result: our subarray so far is [7, -2, 2, 4] with sum 11:
 <p>----------------</p>
@@ -105,7 +101,6 @@ header-img: "img/post-bg-01.jpg"
 <p>step 1. Calculate (new value) = (current sum: 7) + (array[6]: -13) = -6</p>
 <p>step 2. Check if (new value) > 0:</p>
 <p>  it isn't, so we set current sum to 0 and move onto the next array value</p>
-<p>step 3. Check if (current sum) > (best sum)</p>
 <p>result: our subarray so far is [7, -2, 2, 4] with sum 11:
 <p>----------------</p>
 
@@ -137,10 +132,10 @@ header-img: "img/post-bg-01.jpg"
 <p>  it is, so check if (current sum) = 0:</p>
 <p>    it isn't, so don't change the starting index</p>
 <p>  since (new value: 7) > 0, (current sum: 22) is set to (new value)</p>
-<p>step 3. Check if (current sum) > (best sum)</p>
 <p>but (current sum: 7) < (best sum: 22), so we move on to the next array value</p>
 <p>result: our subarray so far is [14, 8] with sum 22:
-<p>---------------</p>
+<p>----------------</p>
+
 <p>Finally our max sum contiguous subarray from array [-6, 7, -2, 2, 4, -4, -13, 14, 8, -15] is [14, 8] with sum 22</p>
 
 
