@@ -2,7 +2,7 @@
 layout:     post
 title:      "Max Contiguous Subarrays and Kadane's Algorithm"
 subtitle:   "And Illuminating Algorithms with print()"
-date:       2015-02-20 12:00:00
+date:       2015-02-14 12:00:00
 author:     "Neil Gordon"
 comments:   true
 header-img: "img/post-bg-01.jpg"
