@@ -8,7 +8,7 @@ comments:   true
 header-img: "img/post-bg-04.jpg"
 ---
 <a href=''><a/>
-<p class='writing'> In this post, I'll talk about how I solved the <a href='https://www.hackerrank.com/domains/'>HackerRank<a/> <a href='https://www.hackerrank.com/challenges/triangle-numbers'>Triangle Numbers<a/> problem the long and why. In this problem, the triangle of numbers is created as follows:</p> 
+<p class='writing'> In this post, I'll talk about how I solved the <a href='https://www.hackerrank.com/domains/'>HackerRank<a/> <a href='https://www.hackerrank.com/challenges/triangle-numbers'>Triangle Numbers</a> problem the long and why. In this problem, the triangle of numbers is created as follows:</p> 
 <p align="center">1</p>
 <p align="center">1 1 1</p>
 <p align="center">1 2 3 2 1</p>
