@@ -116,7 +116,11 @@ import matplotlib.pyplot as plt
 starting_even_position = []
 for i in range(3,54):
     starting_even_position.append(find_starting_even(i))
-    
+x = range(3,54)
+y = starting_even_position
+plt.plot(x,y)    
+plt.show()
+
 </pre>
 <p>Here is the resulting graph created:</p>
 <img src="{{ site.baseurl }}/img/triangle_number_first_even.jpeg" alt="first even number position of triangle numbers">
