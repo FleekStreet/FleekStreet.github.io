@@ -30,6 +30,7 @@ header-img: "img/post-bg-01.jpg"
 
 <h2 class="section-heading">Commandline Example</h2>
 <pre>
+neil@neil-H61MLC:~$ python3 max_subarray.py
 Let's find the subarray of [-6, 7, -2, 2, 4, -4, -13, 14, 8, -15] with the maximum sum using Kadane's Algorithm
 Note that the first array value is at the zeroth index, not the first index
 We'll think of our starting subarray as empty with sum 0
