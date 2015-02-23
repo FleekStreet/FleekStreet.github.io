@@ -163,7 +163,7 @@ This simple function passed with flying colors.
 
 
 <h2 class="section-heading">Conclusion</h2>
-<p class='writing'> This was the long way to solve this problem for sure.  I made more functions than I needed to,  I used brute force as a starting point, I made graphs that revealed a pattern I probably could have picked up on through simple inspection, etc. but why?  Well in doing this problem I realized that I optimized for myself and I really didn't mind.  I had fun doing it this way, and I didn't go searching for some supreme algorithm I could apply, I didn't bother myself with being overly clever or performing intense mental gymnastics.  I just jumped in and kept everything simple at the expense of a little initial efficieny. This apporach isn't always appropriate, but I definitely don't mind when it is. </p> 
+<p class='writing'> This was the long way to solve this problem for sure.  I made more functions than I needed to,  I used brute force as a starting point, I made graphs that revealed a pattern I probably could have picked up on through simple inspection, etc. but why?  Well in doing this problem I realized that I optimized for myself and I really didn't mind.  I had fun doing it this way, and I didn't go searching for some silver bullet algorithm I could apply, I didn't bother myself with being overly clever or performing intense mental gymnastics.  I just jumped in and kept everything simple at the expense of a little initial efficieny. This apporach isn't always appropriate, but I definitely don't mind when it is. </p> 
 
 <style type="text/css">
 p.writing {
